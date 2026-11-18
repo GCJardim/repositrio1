@@ -3,8 +3,8 @@
 **Consolidação:** 18/11/2026 — primeiro ciclo de 5 entregas documentadas.
 **Aplicativo:** https://adesai2-0.vercel.app/
 **Vercel:** projeto `adesai2-0`, ID `prj_kNnDldgjmDxXe22te7I3ecQjWfsN`.
-**Último deploy de produção verificado:** `dpl_2QRiA4xPEgM8LizbeCS3BVLkAcyZ` (READY).
-**SHA-256 do HTML:** `1dd1383a15776a8ed1b0b34b24b0663a27807260f5f5136b0c532c93b3bccae3`.
+**Último deploy de produção verificado:** `dpl_5cwuJwBuA9taSuKXSbCw9RxpNjeA` (READY).
+**SHA-256 do HTML:** `30a885d687b578434ea838637f6441df069263d36396a4939cde4f488f76d741`.
 
 ## Entregas do primeiro ciclo
 1. **Menu lateral modernizado:** grupos, modo recolhido, menu móvel e página ativa destacada.
@@ -15,6 +15,8 @@
 
 ## Entrega do segundo ciclo
 1. **Cursos na ficha:** aba própria com campos para cursos realizados/em andamento e observações, vinculados ao salvamento dos detalhes e à impressão. Publicado em 18/11/2026.
+
+2. **Impressão sem seções vazias:** blocos criados por `group()` só aparecem quando algum campo possui informação. Respostas como Não/Sim/0 são preservadas e Dados do Aluno permanece. Publicado e testado por casos de lógica/HTML, sem teste visual de impressão física.
 
 ## Testes realizados e limites
 - Validação sintática de scripts, reprodução integral do HTML, checagem por hashes e respostas HTTP 200 em preview/produção.
@@ -42,4 +44,4 @@
 2. Continuar conforme próxima solicitação.
 3. Ao concluir uma nova tarefa, atualizar HISTORICO.md e contar novo ciclo.
 
-**Ciclo anterior: 5/5 documentadas. Próximo ciclo: 1/5.**
+**Ciclo anterior: 5/5 documentadas. Próximo ciclo: 2/5.**
