@@ -3,9 +3,10 @@
 **Atualizado em:** 18/11/2026
 **URL principal:** https://adesai2-0.vercel.app/
 **Vercel:** projeto `adesai2-0`, ID `prj_kNnDldgjmDxXe22te7I3ecQjWfsN`.
-**Publicação verificada:** `dpl_jcMuX1jHh4oaPJjjSxL6SMDhRXSi` — estado READY.
+**Publicação verificada:** `dpl_4iJNc3XEsFH1HYquqtZqWVXJfbt1` — estado READY.
 
 ## O que foi confirmado
+- Na impressão da ficha o botão móvel “☰ Menu” e a sobreposição do menu estão ocultos por `@media print` no CSS `adesai-print-hide-navigation`. A publicação foi confirmada; a prévia visual de impressão ainda não foi reavaliada no navegador.
 - Página estática principal em HTML foi recuperada do ambiente publicado.
 - Nova barra lateral agrupada e responsiva publicada em produção em 18/11/2026.
 - Arquivo HTML respondeu HTTP 200 nos dois domínios e manteve conteúdo esperado e hash de integridade.
@@ -38,4 +39,4 @@
 3. Implementar/ajustar reembolsos conforme escopo solicitado.
 4. Registrar cada mudança testada no HISTORICO.md.
 
-**Contador:** 3 / 5 entregas verificadas.
+**Contador:** 4 / 5 entregas verificadas.
