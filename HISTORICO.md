@@ -108,9 +108,25 @@
 
 **Segundo ciclo:** 2 de 5 entregas.
 
+## 18/11/2026 — Entrega 8: imprimir somente o relatório analítico, usando largura útil do A4 (publicada)
+
+**Pedido:** ao imprimir o Relatório Analítico de faltas, ocultar as abas superiores ("Relatórios e descontos" e "Reembolsos por mês") e ampliar o relatório para aproveitar a folha A4 vertical.
+
+**Causa:** botão `#printReport` imprimia a página inteira (`window.print()`) e, por isso, elementos do módulo apareciam na visualização de impressão.
+
+**Correção:** botão agora cria uma cópia temporária exclusivamente do conteúdo `#reportContent` em `#adesaiReportPrintSheet`, fora dos painéis e abas da interface, adiciona regra A4 retrato com margem de 10 mm e aciona a impressão. CSS isolado `adesai-report-print-only` oculta todo o restante da página enquanto a cópia é impressa e amplia relatório, tabela e cabeçalho para 100% da largura útil. O conteúdo temporário e a regra A4 são removidos após a impressão. O relatório exibido na tela e a lógica de dados permanecem inalterados.
+
+**Verificações:** scripts passaram em `node --check`; patch reproduzido e comparado binariamente; preview e dois endereços de produção responderam HTTP 200 com SHA-256 `415c76197d1d63f6bfcc004c68d5aa096d0231b04892d0e3a323eaa8a1a64365`. **Limite:** prévia visual/ impressão em navegador não foi executada.
+
+**Prévia:** `dpl_J6TyF62bEUAV3GC5Kg1V2sQPf473`.
+**Produção:** `dpl_E4arP3wkNHdX1ksVXP4nYQTA2DPD`.
+**URL:** https://adesai2-0.vercel.app/
+
+**Segundo ciclo:** 3/5.
+
 ## Controle do ciclo de cinco entregas
 
-**5 / 5 entregas documentadas no primeiro ciclo (18/11/2026).** Consolidação realizada em STATUS_ATUAL.md e CONTINUIDADE.md. Novo ciclo: **2/5**, incluindo a aba Cursos e a omissão das seções vazias. Preservar este histórico.
+**5 / 5 entregas documentadas no primeiro ciclo (18/11/2026).** Consolidação realizada em STATUS_ATUAL.md e CONTINUIDADE.md. Novo ciclo: **3/5**, incluindo a aba Cursos, a omissão das seções vazias e a impressão isolada do relatório. Preservar este histórico.
 
 ### Não confundir com entregas confirmadas
 Os requisitos de cabeçalho de relatórios, impressão vertical, relação e reembolsos foram solicitados anteriormente, mas os respectivos detalhes de implementação não foram testados nesta entrega.
