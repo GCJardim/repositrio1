@@ -12,8 +12,8 @@
 
 ## IDENTIFICADORES
 - Vercel projeto: `adesai2-0`, ID `prj_kNnDldgjmDxXe22te7I3ecQjWfsN`, URL https://adesai2-0.vercel.app/
-- Último deploy 18/11/2026: `dpl_5cwuJwBuA9taSuKXSbCw9RxpNjeA`.
-- Deploy anterior: `dpl_2QRiA4xPEgM8LizbeCS3BVLkAcyZ`.
+- Último deploy 18/11/2026: `dpl_E4arP3wkNHdX1ksVXP4nYQTA2DPD`.
+- Deploy anterior: `dpl_5cwuJwBuA9taSuKXSbCw9RxpNjeA`.
 - Banco Supabase identificado: projeto `ADESAI2.0`, mas conexão com a aplicação online não foi validada.
 - GitHub da documentação: `GCJardim/repositrio1` (repositório público, não assumir que contém o código completo).
 
@@ -27,6 +27,8 @@
 - Paginação mais compacta por `adesai-print-compact-pages` (permite quebrar blocos longos, mas mantém campos inteiros).
 - Impressão de seções condicionais: `group(title,cells)` agora devolve vazio se nenhum campo possui informação, mas mantém Dados do Aluno; respostas Não/0 contam como informação.
 - Aba `Cursos` adicionada à ficha digital (após Projeto e turma), com campos `d_curso` e `d_observacoesCurso`; a rotina de salvamento genérica de `d_*` registra os valores em `details`, usados na impressão. Estilos `adesai-course-tab-styles`.
+
+- A impressão de relatórios agora usa o elemento temporário `#adesaiReportPrintSheet` e estilos `adesai-report-print-only`, ocultando abas e outras telas e ocupando a largura útil de A4 retrato. Conferir visualmente prévia antes de considerar totalmente validado.
 
 ## DECISÕES QUE DEVEM SER PRESERVADAS
 - Layout institucional ADESAI (logo azul/amarelo).
@@ -46,4 +48,4 @@
 
 ## CONTAGEM
 - Primeiro ciclo concluído: **5 de 5** atualizações documentadas.
-- Novo ciclo em andamento: **2 de 5**.
+- Novo ciclo em andamento: **3 de 5**.
