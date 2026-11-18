@@ -77,9 +77,25 @@
 **Produção:** `dpl_9nytGdvDGyCz5Qg4HaDuYrZibhqR`.
 **URL:** https://adesai2-0.vercel.app/
 
+## 18/11/2026 — Entrega 6: aba Cursos na ficha cadastral (publicada)
+
+**Problema:** seção "Cursos" aparecia no documento impresso, mas os campos `d.curso` e `d.observacoesCurso` não tinham controles correspondentes na ficha digital; o usuário não conseguia preenchê-los.
+
+**Correção:** aba claramente identificada como **Cursos**, após "Projeto e turma", com campo multilinha "Cursos realizados ou em andamento" (um por linha) e "Observações sobre os cursos". Os campos têm nomes `d_curso` e `d_observacoesCurso`, capturados pelo salvamento genérico de `[name^=d_]` já existente; os valores alimentam a seção Cursos da ficha impressa. Estilo responsivo `adesai-course-tab-styles` organiza 8 abas em quatro colunas (duas no celular).
+
+**Teste:** `node --check` de scripts, verificações de presença do formulário, capturador de salvamento e seção de impressão, reconstrução fiel de HTML, preview e dois domínios de produção respondendo HTTP 200 com SHA-256 `1dd1383a15776a8ed1b0b34b24b0663a27807260f5f5136b0c532c93b3bccae3`.
+
+**Limitação:** salvamento em navegador e resultado de impressão não foram exercitados visualmente de ponta a ponta. Persistência real no Supabase continua não comprovada.
+
+**Deploy preview:** `dpl_6JsUpeUBydwoCHYVc7GodtoJZT6B`.
+**Deploy produção:** `dpl_2QRiA4xPEgM8LizbeCS3BVLkAcyZ`.
+**URL:** https://adesai2-0.vercel.app/
+
+**Novo ciclo de entregas:** 1/5.
+
 ## Controle do ciclo de cinco entregas
 
-**5 / 5 entregas documentadas no primeiro ciclo (18/11/2026).** Consolidação realizada em STATUS_ATUAL.md e CONTINUIDADE.md. Próximo ciclo começa em 0/5; registrar novas entregas verificadas sem perder este histórico.
+**5 / 5 entregas documentadas no primeiro ciclo (18/11/2026).** Consolidação realizada em STATUS_ATUAL.md e CONTINUIDADE.md. Novo ciclo iniciado: **1/5**, com a aba Cursos registrada acima. Preservar este histórico.
 
 ### Não confundir com entregas confirmadas
 Os requisitos de cabeçalho de relatórios, impressão vertical, relação e reembolsos foram solicitados anteriormente, mas os respectivos detalhes de implementação não foram testados nesta entrega.
