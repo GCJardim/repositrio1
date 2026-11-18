@@ -63,9 +63,23 @@
 **Prévia:** `dpl_F1fz8icmxRbmZMDmNSNhTRJSDADn` — **Produção:** `dpl_4iJNc3XEsFH1HYquqtZqWVXJfbt1`.
 **URL:** https://adesai2-0.vercel.app/
 
+## 18/11/2026 — Entrega 5: impressão mais compacta, com menos espaços em branco (publicada)
+
+**Problema:** uma seção grande da ficha era empurrada para a folha seguinte, deixando grande área vazia na página anterior.
+
+**Causa identificada:** o CSS de impressão marcava todos os blocos `.pf-group` com `break-inside:avoid` e `page-break-inside:avoid`, além de `overflow:hidden`, impedindo que seções extensas fossem divididas.
+
+**Alteração pontual:** criado o estilo `adesai-print-compact-pages`, que autoriza a divisão de seções longas entre páginas, mantém cabeçalhos junto ao conteúdo quando possível, evita divisão de campos individuais e reduz discretamente margens, lacunas e alturas de campos. Mantém `pf-first` intacta para preservar a fotografia, mantém layout da tela e termos de assinatura com regras próprias.
+
+**Testes:** HTML completo gerado e comparado; scripts verificados com `node --check`; ambiente preview e os dois domínios de produção retornaram HTTP 200 com SHA-256 `8f71a4a227d66549acea509f1fabb7d3bc9e01661e7e1f41a5b84812f80dba6e`. **Pendente:** conferir no navegador a paginação visual e o número exato de folhas (dependem dos dados preenchidos e das configurações de impressão).
+
+**Preview:** `dpl_8Hggz8PUAGUwEhq7dRdnivApR5SE`.
+**Produção:** `dpl_9nytGdvDGyCz5Qg4HaDuYrZibhqR`.
+**URL:** https://adesai2-0.vercel.app/
+
 ## Controle do ciclo de cinco entregas
 
-**4 / 5** entregas documentadas neste ciclo. A próxima devem ser registradas somente após conclusão e verificação. Ao atingir 5, consolidar STATUS_ATUAL.md e CONTINUIDADE.md.
+**5 / 5 entregas documentadas no primeiro ciclo (18/11/2026).** Consolidação realizada em STATUS_ATUAL.md e CONTINUIDADE.md. Próximo ciclo começa em 0/5; registrar novas entregas verificadas sem perder este histórico.
 
 ### Não confundir com entregas confirmadas
 Os requisitos de cabeçalho de relatórios, impressão vertical, relação e reembolsos foram solicitados anteriormente, mas os respectivos detalhes de implementação não foram testados nesta entrega.
