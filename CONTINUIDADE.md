@@ -21,8 +21,10 @@ Dar continuidade ao ADESAI2.0 sem perder funcionalidades e decisões já aprovad
 - Endereço público: https://adesai2-0.vercel.app/
 - Vercel project ID: `prj_kNnDldgjmDxXe22te7I3ecQjWfsN` (nome `adesai2-0`).
 - Deploy de produção da sidebar atualizada: `dpl_27auN7ZW8si9GDVtaFRraHCAfFkL`.
+- **Último deploy de produção:** `dpl_6VJ2yx9udfWMJ2j9oV59ZLEPeics` (correção da foto na impressão da ficha).
 - Base anterior: `dpl_D7A8fbCfyeMsfQoScen1zwXSzAw9`.
 - Na última atualização, app mantinha HTML monolítico com CSS e JS embutidos; os módulos eram renderizados via `render()`.
+- Impressão da ficha: foto posicionada em coluna própria e campos em `pf-first-fields`, regras específicas em `adesai-print-photo-fix`; verificar visualmente uma nova impressão física antes de considerar o resultado visual totalmente confirmado.
 - Atualização da sidebar incorporada ao HTML, com grupos `SIDEBAR_GROUPS` e `sidebarClosedGroups`; estilos no bloco `sidebar-adesai-modern` e comportamentos no bloco `sidebar-adesai-behavior`.
 - Deploy atual foi reconstruído via build que obtém uma versão anterior da Vercel e aplica patch controlado; para novas mudanças, inspecionar os arquivos do deploy atual, não presumir que a página será editável diretamente no GitHub.
 - Este repositório foi identificado como `GCJardim/repositrio1` e estava vazio antes da documentação; **não assumir** que Vercel está conectado a ele.
@@ -43,4 +45,4 @@ Dar continuidade ao ADESAI2.0 sem perder funcionalidades e decisões já aprovad
 - Se não houver acesso ao código-fonte real, buscar na Vercel antes de qualquer alteração.
 
 ## Próxima ação
-Leia a solicitação atual da usuária e confirme o estado mais recente antes de mexer. Se ela pedir ajuste na sidebar, começar verificando se a versão de 18/11/2026 está no ar. Contador de entregas: **1/5**.
+Leia a solicitação atual da usuária e confirme o estado mais recente antes de mexer. Se ela pedir ajuste na sidebar, começar verificando se a versão de 18/11/2026 está no ar. Contador de entregas: **2/5**.
