@@ -22,7 +22,8 @@ Dar continuidade ao ADESAI2.0 sem perder funcionalidades e decisões já aprovad
 - Vercel project ID: `prj_kNnDldgjmDxXe22te7I3ecQjWfsN` (nome `adesai2-0`).
 - Deploy de produção da sidebar atualizada: `dpl_27auN7ZW8si9GDVtaFRraHCAfFkL`.
 - Deploy anterior de produção: `dpl_6VJ2yx9udfWMJ2j9oV59ZLEPeics` (correção da foto na impressão da ficha).
-- **Último deploy de produção:** `dpl_jcMuX1jHh4oaPJjjSxL6SMDhRXSi` (reorganização do editor Nova ficha cadastral).
+- Deploy anterior de produção: `dpl_jcMuX1jHh4oaPJjjSxL6SMDhRXSi` (reorganização do editor Nova ficha cadastral).
+- **Último deploy de produção:** `dpl_4iJNc3XEsFH1HYquqtZqWVXJfbt1` (ocultação do botão móvel de menu na impressão).
 - CSS isolado do editor `adesai-ficha-layout-fix`: corrige recuo com menu recolhido ou expandido, rodapé de botões não flutuante, distribuição responsiva das abas e painéis. Verificar visualmente a tela ao abrir o formulário.
 - Base anterior: `dpl_D7A8fbCfyeMsfQoScen1zwXSzAw9`.
 - Na última atualização, app mantinha HTML monolítico com CSS e JS embutidos; os módulos eram renderizados via `render()`.
@@ -47,4 +48,4 @@ Dar continuidade ao ADESAI2.0 sem perder funcionalidades e decisões já aprovad
 - Se não houver acesso ao código-fonte real, buscar na Vercel antes de qualquer alteração.
 
 ## Próxima ação
-Leia a solicitação atual da usuária e confirme o estado mais recente antes de mexer. Se ela pedir ajuste na sidebar, começar verificando se a versão de 18/11/2026 está no ar. Contador de entregas: **3/5**.
+Leia a solicitação atual da usuária e confirme o estado mais recente antes de mexer. Se ela pedir ajuste na sidebar, começar verificando se a versão de 18/11/2026 está no ar. Contador de entregas: **4/5**.
