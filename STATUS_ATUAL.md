@@ -3,8 +3,8 @@
 **Consolidação:** 18/11/2026 — primeiro ciclo de 5 entregas documentadas.
 **Aplicativo:** https://adesai2-0.vercel.app/
 **Vercel:** projeto `adesai2-0`, ID `prj_kNnDldgjmDxXe22te7I3ecQjWfsN`.
-**Último deploy de produção verificado:** `dpl_9nytGdvDGyCz5Qg4HaDuYrZibhqR` (READY).
-**SHA-256 do HTML:** `8f71a4a227d66549acea509f1fabb7d3bc9e01661e7e1f41a5b84812f80dba6e`.
+**Último deploy de produção verificado:** `dpl_2QRiA4xPEgM8LizbeCS3BVLkAcyZ` (READY).
+**SHA-256 do HTML:** `1dd1383a15776a8ed1b0b34b24b0663a27807260f5f5136b0c532c93b3bccae3`.
 
 ## Entregas do primeiro ciclo
 1. **Menu lateral modernizado:** grupos, modo recolhido, menu móvel e página ativa destacada.
@@ -12,6 +12,9 @@
 3. **Editor Nova ficha cadastral:** alinhamento conforme menu recolhido/aberto, abas responsivas, ações ao final do formulário sem flutuar sobre campos.
 4. **Menu móvel oculto na impressão:** regra `adesai-print-hide-navigation` em `@media print`.
 5. **Impressão compacta:** `adesai-print-compact-pages` permite separar seções longas entre páginas e compacta espaçamentos, reduzindo áreas vazias.
+
+## Entrega do segundo ciclo
+1. **Cursos na ficha:** aba própria com campos para cursos realizados/em andamento e observações, vinculados ao salvamento dos detalhes e à impressão. Publicado em 18/11/2026.
 
 ## Testes realizados e limites
 - Validação sintática de scripts, reprodução integral do HTML, checagem por hashes e respostas HTTP 200 em preview/produção.
@@ -39,4 +42,4 @@
 2. Continuar conforme próxima solicitação.
 3. Ao concluir uma nova tarefa, atualizar HISTORICO.md e contar novo ciclo.
 
-**Ciclo anterior: 5/5 documentadas. Próximo ciclo: 0/5.**
+**Ciclo anterior: 5/5 documentadas. Próximo ciclo: 1/5.**
