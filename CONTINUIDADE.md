@@ -12,8 +12,8 @@
 
 ## IDENTIFICADORES
 - Vercel projeto: `adesai2-0`, ID `prj_kNnDldgjmDxXe22te7I3ecQjWfsN`, URL https://adesai2-0.vercel.app/
-- Último deploy 18/11/2026: `dpl_9nytGdvDGyCz5Qg4HaDuYrZibhqR`.
-- Deploy anterior: `dpl_4iJNc3XEsFH1HYquqtZqWVXJfbt1`.
+- Último deploy 18/11/2026: `dpl_2QRiA4xPEgM8LizbeCS3BVLkAcyZ`.
+- Deploy anterior: `dpl_9nytGdvDGyCz5Qg4HaDuYrZibhqR`.
 - Banco Supabase identificado: projeto `ADESAI2.0`, mas conexão com a aplicação online não foi validada.
 - GitHub da documentação: `GCJardim/repositrio1` (repositório público, não assumir que contém o código completo).
 
@@ -25,6 +25,7 @@
 - Editor Nova ficha corrigido pelo estilo `adesai-ficha-layout-fix`.
 - Botão móvel oculto na impressão por `adesai-print-hide-navigation`.
 - Paginação mais compacta por `adesai-print-compact-pages` (permite quebrar blocos longos, mas mantém campos inteiros).
+- Aba `Cursos` adicionada à ficha digital (após Projeto e turma), com campos `d_curso` e `d_observacoesCurso`; a rotina de salvamento genérica de `d_*` registra os valores em `details`, usados na impressão. Estilos `adesai-course-tab-styles`.
 
 ## DECISÕES QUE DEVEM SER PRESERVADAS
 - Layout institucional ADESAI (logo azul/amarelo).
@@ -44,4 +45,4 @@
 
 ## CONTAGEM
 - Primeiro ciclo concluído: **5 de 5** atualizações documentadas.
-- Novo ciclo aberto: **0 de 5**.
+- Novo ciclo em andamento: **1 de 5**.
