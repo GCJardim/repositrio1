@@ -52,9 +52,20 @@
 **Deploy de produção:** `dpl_jcMuX1jHh4oaPJjjSxL6SMDhRXSi`.
 **URL:** https://adesai2-0.vercel.app/
 
+## 18/11/2026 — Entrega 4: ocultação do botão Menu na impressão (publicada)
+
+**Relato:** o botão flutuante "☰ Menu" aparecia no canto inferior esquerdo da visualização de impressão da ficha de aluno.
+
+**Correção pontual:** inclusão do bloco CSS `adesai-print-hide-navigation` com `@media print`, ocultando `.mobile-menu-button`, `#mobileMenuButton`, `.sidebar-overlay` e `#sidebarOverlay`. O menu continua disponível na navegação normal. Nenhum campo da ficha, cabeçalho, foto, lógica de cadastro ou banco de dados foi alterado.
+
+**Testes efetuados:** scripts passaram em `node --check`; versão gerada comparada com o resultado esperado; prévia e os dois endereços de produção responderam HTTP 200 com o HTML atualizado e SHA-256 `53ca1b1e862034a7f46a0a6a800cb61f4159eaef71ebaf2c5ed79fbc7bd2c44f`. A visualização de impressão no navegador ainda não foi testada interativamente.
+
+**Prévia:** `dpl_F1fz8icmxRbmZMDmNSNhTRJSDADn` — **Produção:** `dpl_4iJNc3XEsFH1HYquqtZqWVXJfbt1`.
+**URL:** https://adesai2-0.vercel.app/
+
 ## Controle do ciclo de cinco entregas
 
-**3 / 5** entregas documentadas neste ciclo. As duas próximas devem ser registradas somente após conclusão e verificação. Ao atingir 5, consolidar STATUS_ATUAL.md e CONTINUIDADE.md.
+**4 / 5** entregas documentadas neste ciclo. A próxima devem ser registradas somente após conclusão e verificação. Ao atingir 5, consolidar STATUS_ATUAL.md e CONTINUIDADE.md.
 
 ### Não confundir com entregas confirmadas
 Os requisitos de cabeçalho de relatórios, impressão vertical, relação e reembolsos foram solicitados anteriormente, mas os respectivos detalhes de implementação não foram testados nesta entrega.
