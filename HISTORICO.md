@@ -38,9 +38,23 @@
 **Deploy produção:** `dpl_6VJ2yx9udfWMJ2j9oV59ZLEPeics`.
 **URL:** https://adesai2-0.vercel.app/
 
+## 18/11/2026 — Entrega 3: alinhamento da tela Nova ficha cadastral (publicada)
+
+**Problema identificado na imagem enviada:** a nova ficha aparecia deslocada à direita quando a barra lateral era recolhida, e a barra de ações (Salvar ficha, Limpar empresa, Mover para Preparatório, Cancelar) flutuava sobre o conteúdo. As sete abas ocupavam linhas desiguais.
+
+**Causa:** o editor continuava com recuo lateral fixo independente do estado da sidebar; a barra `ficha-footer` tinha `position:sticky`; as abas eram limitadas a seis colunas mesmo havendo sete seções.
+
+**Alteração:** adicionado o CSS isolado `adesai-ficha-layout-fix` no HTML. Recuo do editor ajustado para sidebar expandida (282px), recolhida (78px) e celular (0). Barra de ações transformada em rodapé normal do formulário, sem sobreposição; abas reorganizadas em grade responsiva com 7/4/3/2 colunas conforme largura; grid de conteúdo e histórico adaptados a telas menores. Os controles e a lógica de salvamento não foram modificados.
+
+**Verificação:** integridade do HTML validada na geração, scripts passaram em `node --check`, preview e dois endereços de produção responderam HTTP 200 com SHA-256 `cc4ced9946438801ac9d605e8c1f8df831e090b3d95c4139bb59a9bc45f4c86a`. **Pendente:** confirmação visual por uso do navegador na tela real.
+
+**Deploy de prévia:** `dpl_Eunw2mf4sj4P1R44o8YCwFBKMeYf`.
+**Deploy de produção:** `dpl_jcMuX1jHh4oaPJjjSxL6SMDhRXSi`.
+**URL:** https://adesai2-0.vercel.app/
+
 ## Controle do ciclo de cinco entregas
 
-**2 / 5** entregas documentadas neste ciclo. As três próximas devem ser registradas somente após conclusão e verificação. Ao atingir 5, consolidar STATUS_ATUAL.md e CONTINUIDADE.md.
+**3 / 5** entregas documentadas neste ciclo. As duas próximas devem ser registradas somente após conclusão e verificação. Ao atingir 5, consolidar STATUS_ATUAL.md e CONTINUIDADE.md.
 
 ### Não confundir com entregas confirmadas
 Os requisitos de cabeçalho de relatórios, impressão vertical, relação e reembolsos foram solicitados anteriormente, mas os respectivos detalhes de implementação não foram testados nesta entrega.
