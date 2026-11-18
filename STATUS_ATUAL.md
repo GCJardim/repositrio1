@@ -3,13 +3,14 @@
 **Atualizado em:** 18/11/2026
 **URL principal:** https://adesai2-0.vercel.app/
 **Vercel:** projeto `adesai2-0`, ID `prj_kNnDldgjmDxXe22te7I3ecQjWfsN`.
-**Publicação verificada:** `dpl_27auN7ZW8si9GDVtaFRraHCAfFkL` — estado READY.
+**Publicação verificada:** `dpl_6VJ2yx9udfWMJ2j9oV59ZLEPeics` — estado READY.
 
 ## O que foi confirmado
 - Página estática principal em HTML foi recuperada do ambiente publicado.
 - Nova barra lateral agrupada e responsiva publicada em produção em 18/11/2026.
 - Arquivo HTML respondeu HTTP 200 nos dois domínios e manteve conteúdo esperado e hash de integridade.
 - Código JavaScript validado sintaticamente.
+- Ficha impressa: foto colocada em coluna independente de seus campos, sem linhas compartilhadas. Preview e produção com integridade de HTML confirmada. Impressão física ainda não reavaliada após alteração.
 
 ## Estrutura identificada
 - Na versão inspecionada o aplicativo usa um único arquivo HTML grande, com CSS, scripts e imagens incorporadas.
@@ -36,4 +37,4 @@
 3. Implementar/ajustar reembolsos conforme escopo solicitado.
 4. Registrar cada mudança testada no HISTORICO.md.
 
-**Contador:** 1 / 5 entregas verificadas.
+**Contador:** 2 / 5 entregas verificadas.
