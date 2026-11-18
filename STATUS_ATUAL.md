@@ -3,13 +3,14 @@
 **Atualizado em:** 18/11/2026
 **URL principal:** https://adesai2-0.vercel.app/
 **Vercel:** projeto `adesai2-0`, ID `prj_kNnDldgjmDxXe22te7I3ecQjWfsN`.
-**Publicação verificada:** `dpl_6VJ2yx9udfWMJ2j9oV59ZLEPeics` — estado READY.
+**Publicação verificada:** `dpl_jcMuX1jHh4oaPJjjSxL6SMDhRXSi` — estado READY.
 
 ## O que foi confirmado
 - Página estática principal em HTML foi recuperada do ambiente publicado.
 - Nova barra lateral agrupada e responsiva publicada em produção em 18/11/2026.
 - Arquivo HTML respondeu HTTP 200 nos dois domínios e manteve conteúdo esperado e hash de integridade.
 - Código JavaScript validado sintaticamente.
+- Editor da nova ficha cadastral: recuo da sidebar recolhida/expandida corrigido; ações integradas no final do formulário; abas e grid responsivos. Publicado e verificado por HTTP e hash, teste visual interativo pendente.
 - Ficha impressa: foto colocada em coluna independente de seus campos, sem linhas compartilhadas. Preview e produção com integridade de HTML confirmada. Impressão física ainda não reavaliada após alteração.
 
 ## Estrutura identificada
@@ -37,4 +38,4 @@
 3. Implementar/ajustar reembolsos conforme escopo solicitado.
 4. Registrar cada mudança testada no HISTORICO.md.
 
-**Contador:** 2 / 5 entregas verificadas.
+**Contador:** 3 / 5 entregas verificadas.
