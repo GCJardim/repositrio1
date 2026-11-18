@@ -93,9 +93,24 @@
 
 **Novo ciclo de entregas:** 1/5.
 
+## 18/11/2026 — Entrega 7: omitir seções vazias na impressão da ficha (publicada)
+
+**Pedido:** quando uma área inteira da ficha estiver sem informações, não imprimir essa seção. Exemplo: participante sem curso não deve gerar o bloco "Cursos".
+
+**Implementação:** a função `group(title,cells)` da impressão da ficha verifica se pelo menos um campo possui valor não vazio antes de renderizar a seção. Campos sem valor ou somente espaços/`&nbsp;` não mantêm um bloco vazio. Respostas explícitas "Não", "Sim" ou "0" contam como preenchidas. O cabeçalho e os Dados do Aluno permanecem preservados mesmo em fichas incompletas. Vale para seções como Cursos, Documentação, Contato, Benefícios e demais grupos criados por `group()`. O formulário digital e seus dados não foram alterados.
+
+**Verificações:** execução de casos de teste (seção sem cursos omitida; com curso incluída; "Não" e "0" mantidos), `node --check` nos scripts, reconstrução integral por hash e publicação HTTP 200 nos dois domínios. A conferência visual no navegador com fichas reais continua pendente.
+
+**Deploy de prévia:** `dpl_73bEBQkvV62ru54nCJs2B8epuZya`.
+**Deploy de produção:** `dpl_5cwuJwBuA9taSuKXSbCw9RxpNjeA`.
+**Hash HTML publicado:** `30a885d687b578434ea838637f6441df069263d36396a4939cde4f488f76d741`.
+**URL:** https://adesai2-0.vercel.app/
+
+**Segundo ciclo:** 2 de 5 entregas.
+
 ## Controle do ciclo de cinco entregas
 
-**5 / 5 entregas documentadas no primeiro ciclo (18/11/2026).** Consolidação realizada em STATUS_ATUAL.md e CONTINUIDADE.md. Novo ciclo iniciado: **1/5**, com a aba Cursos registrada acima. Preservar este histórico.
+**5 / 5 entregas documentadas no primeiro ciclo (18/11/2026).** Consolidação realizada em STATUS_ATUAL.md e CONTINUIDADE.md. Novo ciclo: **2/5**, incluindo a aba Cursos e a omissão das seções vazias. Preservar este histórico.
 
 ### Não confundir com entregas confirmadas
 Os requisitos de cabeçalho de relatórios, impressão vertical, relação e reembolsos foram solicitados anteriormente, mas os respectivos detalhes de implementação não foram testados nesta entrega.
